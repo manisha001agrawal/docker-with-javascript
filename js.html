@@ -1,0 +1,44 @@
+<html>
+      <head>
+         <link rel="stylesheet" href="my.css">
+      </head>
+    <body>
+    <div align='left' id='s1'>
+    <label for="cars"><b>Choose a docker cmd: </b></label>
+
+    <select name="cmd" id="cmd" onchange="fun()">
+      <option value="">Select any one</option>
+      <option value="l1">list of docker image</option>
+      <option value="l2">All list of docker os</option>
+      <option value="l3">list of  docker running os</option>
+      <option value="l4">create docker os</option>
+      <option value="l5">exec the os</option>
+      <option value="l6">Start the docker</option>
+      <option value="l7">Stop the docker</option>
+      <option value="l8">See status of the docker</option>
+    </select>
+    <b style="padding-left: 20%;">Enter ur command: </b></b><input id='int1' />
+    <button onclick="run();">submit</button>
+    </div>
+    <br>
+
+    <div id='d1' align='center'>
+    <h2 align='center' style="height:5%"><b>Output</b></h2>
+    <pre> <p id = 'p1'align='center' ></p></pre>
+    </div>
+
+    <div style="padding-top: 11px; padding-left: 100px; ">
+
+    <b>Enter the cmd:</b> <input id='id2' value="sudo "/>
+    <br><br>
+    <b>Enter the dest:</b> <input id='id3'/>
+    <br><br>
+    <b>Enter the req:</b> <input id='id4'/>
+    <br>
+    <div style="padding-top: 5px; padding-left: 200px; ">
+    <button onclick="fun1();" >Add Cmd</button></div>
+
+    </div>
+<script src="my.js"></script>
+</body>
+</html>
