@@ -13,7 +13,7 @@ function run(){
         x = document.getElementById('p1');
         cmd = document.getElementById('int1').value;
         var xhr = new XMLHttpRequest();
-        xhr.open("GET","http://192.168.90.134/cgi-bin/js.py?x=" +"sudo "+cmd,false);
+        xhr.open("GET","http://192.168.43.51/cgi-bin/js.py?x=" +"sudo "+cmd,false);
         xhr.send();
         var output = xhr.responseText;
         output1 = '<b><h2>Successfully done</h2></b>';
@@ -49,7 +49,7 @@ function fun(){
             var image = window.prompt("Enter image name: ");
             var i  = 'sudo docker run --name '+name+" "+image
             alert(i)
-            xhr.open("GET","http://192.168.90.134/cgi-bin/js.py?x=" + i,false);
+            xhr.open("GET","http://192.168..43.51/cgi-bin/js.py?x=" + i,false);
             xhr.send();
             var output = xhr.responseText;
             x.innerHTML = output;
@@ -58,7 +58,7 @@ function fun(){
             var os = window.prompt("Enter os name or os id : ");
             var i = 'sudo docker exec'+" "+os;
             alert(i)
-            xhr.open("GET","http://192.168.90.134/cgi-bin/js.py?x=" + i,false);
+            xhr.open("GET","http://192.168..43.51/cgi-bin/js.py?x=" + i,false);
             xhr.send();
             var output = xhr.responseText;
             x.innerHTML = output;
@@ -67,7 +67,7 @@ function fun(){
             var image = window.prompt("Enter the image name : ");
             var i = dict[j.value]+" "+os;
             alert(i)
-            xhr.open("GET","http://192.168.90.134/cgi-bin/js.py?x=" + i,false);
+            xhr.open("GET","http://192.168..43.51/cgi-bin/js.py?x=" + i,false);
             xhr.send();
             var output = xhr.responseText;
             x.innerHTML = output;
@@ -77,7 +77,7 @@ function fun(){
             if(z == ""){
             var i  = dict[j.value];
             alert(i)
-            xhr.open("GET","http://192.168.90.134/cgi-bin/js.py?x=" + i,false);
+            xhr.open("GET","http://192.168..43.51/cgi-bin/js.py?x=" + i,false);
             xhr.send();
             var output = xhr.responseText;
             output1 = '<b><h2>Successfully done</h2></b>';
@@ -89,7 +89,7 @@ function fun(){
                 i =i+" "+items;
                 dict[j.value] = i;
                 alert(i)
-                xhr.open("GET","http://192.168.90.134/cgi-bin/js.py?x=" + i,false);
+                xhr.open("GET","http://192.168..43.51/cgi-bin/js.py?x=" + i,false);
                 xhr.send();
                 var output = xhr.responseText;
                 output1 = '<b><h2>Successfully done</h2></b>';
@@ -99,7 +99,7 @@ function fun(){
         else{
             var i  = dict[j.value];
             alert(i)
-            xhr.open("GET","http://192.168.90.134/cgi-bin/js.py?x=" + i,false);
+            xhr.open("GET","http://192.168..43.51/cgi-bin/js.py?x=" + i,false);
             xhr.send();
             var output = xhr.responseText;
             output1 = '<b><h2>Successfully done</h2></b>';
